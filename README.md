@@ -1,7 +1,7 @@
 # Poetic Phrase Generator
 
 
-Create poetic phrases, through AI, about your favorite activities and places.
+Create poetic phrases, about your favorite activities and places.
 
 
 ## About Scrimba
