@@ -1,20 +1,19 @@
 import { generateTextAndImage } from "./utils.js"
 
-// 1. Change the value of the variable to your name
+// 1. Mude o valor da variavel para o seu nome
 let name = "Breno Augusto"
 
-// 2. Change the value of the variable to your favorite activity
-let favoriteActivity = "running"
+// 2. Mude o valor da variavel para a sua atividade favorita
+let favoriteActivity = "Correr"
 
-// 3. Assign the favoritePlace variable your favorite place
-// I.e. city, mountain, pub, forrest, beach, Manhattan, etc.
-let favoritePlace = "beach"
+// 3. Mude o valor da variavel para o seu lugar favorito
+let favoritePlace = "Praia"
 
-// 4. Configure the AI by setting a temperature from 0 to 1
-// The higher temperature, the more random & experimental output
+// 4. Configure a IA, definindo a temperatura entre 0 e 1. 
+// Temperatura mais alta (perto de 1, deixa mais aleatório)
 let temperature = 0.8
 
-// Optional: delete "avatar.jpg" and add a photo of yourself
-// (remember to use "avatar.jpg" as the name of your photo)
+// Optional: delete a imagem "avatar.jpg" e adicione uma foto sua
+// (lembre-se de renomear sua foto para "avatar.jpg")
 
 generateTextAndImage(name, favoriteActivity, favoritePlace, temperature)

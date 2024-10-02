@@ -42,18 +42,18 @@ function getDate() {
   const year = date.getFullYear()
 
   const monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
   ]
 
   const monthName = monthNames[monthIndex]
@@ -76,7 +76,7 @@ async function getImage(query) {
 }
 
 async function getQuote(favActivity, favPlace, temperature) {
-  let quotePrompt = `Create a poetic phrase about ${favActivity} and ${favPlace} in the insightful, witty and satirical style of Oscar Wilde. Omit Oscar Wilde's name.`
+  let quotePrompt = `Crie uma frase poética sobre ${favActivity} e ${favPlace} no estilo perspicaz, espirituoso e satírico de Oscar Wilde. Omitir o nome de Oscar Wilde.`
 
   if (quotePrompt === quotePromptFromLocalStorage) {
     return quoteFromLocalStorage
