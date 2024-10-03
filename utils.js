@@ -27,11 +27,12 @@ export async function generateTextAndImage(
   name,
   favActivity,
   favPlace,
+  favAuthor,
   temperature
 ) {
   startLoading()
   let url = await getImage(favPlace)
-  let quote = await getQuote(favActivity, favPlace, temperature)
+  let quote = await getQuote(favActivity, favPlace, favAuthor, temperature)
   stopLoading(name, url, quote)
   return
 }
@@ -75,8 +76,9 @@ async function getImage(query) {
   }
 }
 
-async function getQuote(favActivity, favPlace, temperature) {
-  let quotePrompt = `Crie uma frase poética sobre ${favActivity} e ${favPlace} no estilo perspicaz, espirituoso e satírico de Oscar Wilde. Omitir o nome de Oscar Wilde.`
+async function getQuote(favActivity, favPlace, favAuthor, temperature) {
+  let quotePrompt = `Crie uma frase poética sobre ${favActivity} e ${favPlace} baseando o estilo no autor ${favAuthor}. Omitir o nome do autor.`
+
 
   if (quotePrompt === quotePromptFromLocalStorage) {
     return quoteFromLocalStorage
